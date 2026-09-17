@@ -3,6 +3,7 @@
 import { useEffect, useRef } from "react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
+import { asset } from "@/lib/base";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -38,7 +39,7 @@ export default function Craft() {
       <div ref={imgRef} className="absolute inset-[-14%] will-change-transform">
         <div
           className="h-full w-full bg-cover bg-center"
-          style={{ backgroundImage: "url(/img/maos.jpg)" }}
+          style={{ backgroundImage: `url(${asset("/img/maos.jpg")})` }}
         />
       </div>
       <div className="absolute inset-0 bg-ink/55" />

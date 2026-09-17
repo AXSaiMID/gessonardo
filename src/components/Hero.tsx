@@ -4,6 +4,7 @@ import { useEffect, useRef } from "react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { COMPANY } from "@/lib/data";
+import { asset } from "@/lib/base";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -52,7 +53,7 @@ export default function Hero() {
       <div ref={imgRef} className="absolute inset-0 will-change-transform">
         <div
           className="absolute inset-0 bg-cover bg-center"
-          style={{ backgroundImage: "url(/img/hero.jpg)" }}
+          style={{ backgroundImage: `url(${asset("/img/hero.jpg")})` }}
         />
         <div className="absolute inset-0 bg-gradient-to-t from-ink via-ink/45 to-ink/70" />
         <div className="absolute inset-0 bg-gradient-to-r from-ink/70 via-transparent to-ink/40" />

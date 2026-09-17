@@ -4,6 +4,7 @@ import { useEffect, useRef } from "react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { GROUP, COMPANY } from "@/lib/data";
+import { asset } from "@/lib/base";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -118,7 +119,7 @@ export default function Group() {
         <div ref={imgRef} className="absolute inset-[-12%] will-change-transform">
           <div
             className="h-full w-full bg-cover bg-center"
-            style={{ backgroundImage: "url(/img/maringa.jpg)" }}
+            style={{ backgroundImage: `url(${asset("/img/maringa.jpg")})` }}
           />
         </div>
         <div className="absolute inset-0 bg-ink/45" />
