@@ -5,6 +5,7 @@ import Image from "next/image";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { SERVICES, COMPANY } from "@/lib/data";
+import { asset } from "@/lib/base";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -70,7 +71,7 @@ export default function Services() {
             >
               <div className="relative min-h-[300px] overflow-hidden md:min-h-full">
                 <Image
-                  src={s.img}
+                  src={asset(s.img)}
                   alt={s.title}
                   fill
                   priority={i < 2}

@@ -4,6 +4,7 @@ import { useEffect, useRef } from "react";
 import Image from "next/image";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
+import { asset } from "@/lib/base";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -75,7 +76,7 @@ export default function Works() {
             >
               <div className={`relative w-full overflow-hidden ${w.ratio}`}>
                 <Image
-                  src={w.img}
+                  src={asset(w.img)}
                   alt={w.title}
                   fill
                   className="object-cover transition-transform duration-[1.8s] ease-[cubic-bezier(0.22,1,0.36,1)] group-hover:scale-[1.07]"
