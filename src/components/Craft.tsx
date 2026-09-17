@@ -39,10 +39,10 @@ export default function Craft() {
       <div ref={imgRef} className="absolute inset-[-14%] will-change-transform">
         <div
           className="h-full w-full bg-cover bg-center"
-          style={{ backgroundImage: `url(${asset("/img/maos.jpg")})` }}
+          style={{ backgroundImage: `url(${asset("/img/maos.jpg")}?v=2)` }}
         />
       </div>
-      <div className="absolute inset-0 bg-ink/55" />
+      <div className="absolute inset-0 bg-ink/25" />
       <div className="absolute inset-0 bg-gradient-to-t from-ink via-transparent to-ink" />
 
       <div className="relative z-10 flex h-full flex-col items-center justify-center px-6 text-center">

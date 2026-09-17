@@ -53,10 +53,9 @@ export default function Hero() {
       <div ref={imgRef} className="absolute inset-0 will-change-transform">
         <div
           className="absolute inset-0 bg-cover bg-center"
-          style={{ backgroundImage: `url(${asset("/img/hero.jpg")})` }}
+          style={{ backgroundImage: `url(${asset("/img/hero.jpg")}?v=2)` }}
         />
-        <div className="absolute inset-0 bg-gradient-to-t from-ink via-ink/45 to-ink/70" />
-        <div className="absolute inset-0 bg-gradient-to-r from-ink/70 via-transparent to-ink/40" />
+        <div className="absolute inset-0 bg-gradient-to-t from-ink/90 via-ink/15 to-ink/25" />
       </div>
 
       {/* Meta topo */}

@@ -119,10 +119,10 @@ export default function Group() {
         <div ref={imgRef} className="absolute inset-[-12%] will-change-transform">
           <div
             className="h-full w-full bg-cover bg-center"
-            style={{ backgroundImage: `url(${asset("/img/maringa.jpg")})` }}
+            style={{ backgroundImage: `url(${asset("/img/maringa.jpg")}?v=2)` }}
           />
         </div>
-        <div className="absolute inset-0 bg-ink/45" />
+        <div className="absolute inset-0 bg-ink/25" />
         <div className="absolute inset-0 bg-gradient-to-t from-ink via-transparent to-ink" />
         <div className="relative z-10 flex h-full items-center justify-center px-6">
           <p className="text-center font-display text-[clamp(1.6rem,4vw,3.4rem)] font-light leading-tight text-ivory">

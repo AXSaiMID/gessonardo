@@ -3,7 +3,6 @@ import "./globals.css";
 import SmoothScroll from "@/components/SmoothScroll";
 import Preloader from "@/components/Preloader";
 import Cursor from "@/components/Cursor";
-import Grain from "@/components/Grain";
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://www.gessonardo.com.br"),
@@ -33,7 +32,6 @@ export default function RootLayout({
         <Preloader />
         <Cursor />
         <SmoothScroll>{children}</SmoothScroll>
-        <Grain />
       </body>
     </html>
   );

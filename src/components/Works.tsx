@@ -8,12 +8,12 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 gsap.registerPlugin(ScrollTrigger);
 
 const WORKS = [
-  { img: "/img/sanca.jpg", tag: "Sanca", title: "Sanca com luz indireta — living", span: "md:col-span-7", ratio: "aspect-[16/10]" },
-  { img: "/img/nicho.jpg", tag: "Nichos", title: "Nichos iluminados — estar", span: "md:col-span-5", ratio: "aspect-[4/3]" },
-  { img: "/img/teto.jpg", tag: "Teto rebaixado", title: "Rebaixo com spots — home theater", span: "md:col-span-5", ratio: "aspect-[4/3]" },
-  { img: "/img/hero.jpg", tag: "Iluminação", title: "Forro com perfis de LED — living", span: "md:col-span-7", ratio: "aspect-[16/10]" },
-  { img: "/img/parede.jpg", tag: "Drywall", title: "Divisória pronta para acabamento", span: "md:col-span-6", ratio: "aspect-[16/10]" },
-  { img: "/img/gesso-liso.jpg", tag: "Gesso liso", title: "Superfície lisa sob luz rasante", span: "md:col-span-6", ratio: "aspect-[16/10]" },
+  { img: "/img/sanca.jpg?v=2", tag: "Sanca", title: "Sanca com luz indireta — living", span: "md:col-span-7", ratio: "aspect-[16/10]" },
+  { img: "/img/nicho.jpg?v=2", tag: "Nichos", title: "Nichos iluminados — estar", span: "md:col-span-5", ratio: "aspect-[4/3]" },
+  { img: "/img/teto.jpg?v=2", tag: "Teto rebaixado", title: "Rebaixo com spots — home theater", span: "md:col-span-5", ratio: "aspect-[4/3]" },
+  { img: "/img/hero.jpg?v=2", tag: "Iluminação", title: "Forro com perfis de LED — living", span: "md:col-span-7", ratio: "aspect-[16/10]" },
+  { img: "/img/parede.jpg?v=2", tag: "Drywall", title: "Divisória pronta para acabamento", span: "md:col-span-6", ratio: "aspect-[16/10]" },
+  { img: "/img/gesso-liso.jpg?v=2", tag: "Gesso liso", title: "Superfície lisa sob luz rasante", span: "md:col-span-6", ratio: "aspect-[16/10]" },
 ];
 
 export default function Works() {
@@ -81,7 +81,6 @@ export default function Works() {
                   className="object-cover transition-transform duration-[1.8s] ease-[cubic-bezier(0.22,1,0.36,1)] group-hover:scale-[1.07]"
                   sizes="(max-width: 768px) 100vw, 60vw"
                 />
-                <div className="absolute inset-0 bg-ink/25 transition-opacity duration-700 group-hover:opacity-0" />
               </div>
               <figcaption className="absolute inset-x-0 bottom-0 flex items-end justify-between gap-4 bg-gradient-to-t from-ink/90 to-transparent p-6 pt-16">
                 <div>
