@@ -14,8 +14,11 @@ export default function SmoothScroll({
 }) {
   useEffect(() => {
     const lenis = new Lenis({
-      duration: 1.15,
-      easing: (t: number) => Math.min(1, 1.001 - Math.pow(2, -10 * t)),
+      // lerp = interpolação contínua: fluido e responsivo (sem sensação de atraso)
+      lerp: 0.14,
+      // wheelMultiplier > 1 deixa a rolagem mais rápida/leve
+      wheelMultiplier: 1.25,
+      touchMultiplier: 1.4,
       smoothWheel: true,
     });
 
@@ -36,7 +39,7 @@ export default function SmoothScroll({
       const el = document.querySelector(id);
       if (!el) return;
       e.preventDefault();
-      lenis.scrollTo(el as HTMLElement, { offset: -72, duration: 1.4 });
+      lenis.scrollTo(el as HTMLElement, { offset: -72, duration: 1.1 });
     };
     window.addEventListener("click", onClick);
 
